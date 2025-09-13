@@ -16,6 +16,9 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+h1 {
+  margin-bottom: 40px;
+}
 /* Контейнер таймера */
 .timer {
   display: flex;
@@ -108,4 +111,109 @@ button[data-start]:hover {
 button[data-start]:disabled {
   background-color: #cfcfcf;
   cursor: not-allowed;
+}
+.form {
+  max-width: 360px;
+  margin: 20px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.form input[type='number'] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.form input[type='number']:hover {
+  border: 1px solid #000;
+}
+.form input[type='number']:focus {
+  border: 1px solid #4e75ff;
+  outline: none;
+}
+
+.form input[type='number']:active {
+  border: 1px solid #4e75ff;
+}
+
+fieldset {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 78px;
+  box-sizing: border-box;
+  width: 100%;
+}
+label.label-state {
+  max-width: 104px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+legend {
+  padding: 0 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-right: auto;
+}
+
+button[type='submit'] {
+  height: 40px;
+  width: 100%;
+  padding: 8px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  border-radius: 8px;
+  background-color: #4e75ff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type='submit']:hover {
+  background-color: #6c8cff;
+}
+label .text {
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
